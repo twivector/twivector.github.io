@@ -1,11 +1,188 @@
-body {
-  margin: 0;
-  padding: 40px;
-  background: #0f0f0f;
-  color: white;
-  font-family: Arial, sans-serif;
+* {
+    box-sizing: border-box;
 }
 
-h1 {
-  font-size: 3rem;
+body {
+    margin: 0;
+    background: #0f1115;
+    color: #f5f5f5;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 90px 24px 70px;
+    border-bottom: 1px solid #222831;
+    background:
+        linear-gradient(
+            180deg,
+            #12161d 0%,
+            #0f1115 100%
+        );
+}
+
+.hero-content {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 4rem;
+    letter-spacing: -2px;
+}
+
+.tagline {
+    margin-top: 16px;
+    font-size: 1.15rem;
+    color: #b9c0cc;
+    max-width: 700px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+    margin-top: 32px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.nav-links a {
+    color: #6cb6ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 24px;
+}
+
+/* =========================
+   FEATURED SECTION
+========================= */
+
+.section-header h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.section-header p {
+    margin-top: 10px;
+    color: #aeb7c2;
+}
+
+/* =========================
+   PROJECT CARD
+========================= */
+
+.project-card {
+    margin-top: 36px;
+    background: #171b22;
+    border: 1px solid #252c38;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.project-banner {
+    width: 100%;
+    background: #101317;
+}
+
+.project-banner img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-content h3 {
+    margin-top: 0;
+    margin-bottom: 14px;
+    font-size: 1.8rem;
+}
+
+.project-content p {
+    color: #c5ccd6;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.project-actions {
+    margin-top: 26px;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 10px;
+    background: #6cb6ff;
+    color: #0f1115;
+    font-weight: 700;
+    text-decoration: none;
+    transition: transform 0.15s ease;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    margin-top: 40px;
+    padding: 32px 24px;
+    border-top: 1px solid #222831;
+    text-align: center;
+    color: #9aa4b2;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .hero {
+        padding-top: 70px;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.6rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.5rem;
+    }
 }
